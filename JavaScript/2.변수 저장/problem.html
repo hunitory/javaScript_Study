@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let myName = "지훈";
+      myName = "성인";
+      let myAge = 28;
+
+      const section = document.createElement("div");
+      section.innerHTML = " ";
+      const para1 = document.createElement("p");
+      para1.textContent = myName;
+      const para2 = document.createElement("p");
+      para2.textContent = `In 20 years, I will be ${myAge + 20}`;
+      section.appendChild(para1);
+      section.appendChild(para2);
+
+      document.body.appendChild(section);
+    </script>
+  </body>
+</html>
